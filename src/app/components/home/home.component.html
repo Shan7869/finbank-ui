@@ -1,0 +1,72 @@
+<div class="home-container">
+    <!-- Hero Section -->
+    <div class="hero-section">
+      <h1>Welcome to Your Trusted Bank</h1>
+      <p>Secure your future with our reliable and innovative banking solutions.</p>
+      <button mat-button [matMenuTriggerFor]="accountMenu" class="create-account-btn">
+        Create Account
+      </button>
+      <mat-menu #accountMenu="matMenu">
+        <button mat-menu-item *ngFor="let account of accountTypes">
+          {{ account }}
+        </button>
+      </mat-menu>
+    </div>
+  
+    <!-- Action Buttons -->
+    <div class="action-buttons">
+      <button mat-raised-button color="primary">Log In</button>
+      <button mat-raised-button color="accent">View Services</button>
+      <button mat-raised-button color="warn">Customer Support</button>
+      <button mat-raised-button color="primary">Contact Us</button>
+      <button mat-raised-button color="accent">About Us</button>
+    </div>
+  
+    <!-- Featured Services Section -->
+    <div class="featured-services">
+      <h2>Our Featured Services</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Personal Banking</h3>
+          <p>Manage your accounts with ease, enjoy personalized service, and achieve your financial goals.</p>
+        </div>
+        <div class="service-card">
+          <h3>Loans & Credit</h3>
+          <p>Flexible loans and credit solutions to meet your personal and business needs.</p>
+        </div>
+        <div class="service-card">
+          <h3>Investment Plans</h3>
+          <p>Grow your wealth with our safe and diversified investment options.</p>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Testimonials Section -->
+    <div class="testimonials">
+      <h2>What Our Customers Say</h2>
+      <div class="testimonial-card">
+        <p>"The best banking experience I've ever had. Exceptional customer service and reliable online banking."</p>
+        <span>- Sarah W.</span>
+      </div>
+      <div class="testimonial-card">
+        <p>"I love their easy-to-use mobile app. Managing my finances has never been so convenient!"</p>
+        <span>- John D.</span>
+      </div>
+    </div>
+  
+    <!-- Latest News Section -->
+    <div class="latest-news">
+      <h2>Latest News</h2>
+      <div class="news-card">
+        <h4>New Mobile Banking Features Released</h4>
+        <p>Our latest app update includes enhanced security features and an improved user interface.</p>
+      </div>
+      <div class="news-card">
+        <h4>Upcoming Webinar: Financial Planning 101</h4>
+        <p>Join our experts to learn how to effectively plan your finances and secure your future.</p>
+      </div>
+    </div>
+  
+    <!-- Footer Section -->
+    
+  </div>

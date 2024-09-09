@@ -1,17 +1,23 @@
 <div class="user-create">
-    <h2>Create User</h2>
-    <form (ngSubmit)="createUser()">
-        <label>Username</label>
-        <input matInput [(ngModel)]="user.username" name="username" required />
-    
-  
-        <mat-label>Password</mat-label>
-        <input [(ngModel)]="user.password" name="password" type="password" required />
-  
-        <label>Email</label>
-        <input [(ngModel)]="user.email" name="email" required />
-      
-  
-      <button color="primary" type="submit">Create</button>
-    </form>
-  </div>
+  <h2>Create User</h2>
+  <form (ngSubmit)="createUser()" class="user-form">
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Username</mat-label>
+      <input matInput [(ngModel)]="user.username" name="username" required />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Password</mat-label>
+      <input matInput [(ngModel)]="user.password" name="password" type="password" required />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Email</mat-label>
+      <input matInput [(ngModel)]="user.email" name="email" type="email" required />
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" type="submit" class="submit-btn">
+      Create
+    </button>
+  </form>
+</div>

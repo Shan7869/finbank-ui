@@ -10,3 +10,18 @@
       color: #666;
     }
   }
+  .footer {
+    text-align: center;
+    padding: 10px;
+    background: #212121;
+    color: #fff;
+
+    a {
+      color: #ff9800;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
