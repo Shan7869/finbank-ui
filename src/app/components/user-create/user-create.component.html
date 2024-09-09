@@ -1,0 +1,17 @@
+<div class="user-create">
+    <h2>Create User</h2>
+    <form (ngSubmit)="createUser()">
+        <label>Username</label>
+        <input matInput [(ngModel)]="user.username" name="username" required />
+    
+  
+        <mat-label>Password</mat-label>
+        <input [(ngModel)]="user.password" name="password" type="password" required />
+  
+        <label>Email</label>
+        <input [(ngModel)]="user.email" name="email" required />
+      
+  
+      <button color="primary" type="submit">Create</button>
+    </form>
+  </div>
